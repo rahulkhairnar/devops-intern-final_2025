@@ -28,3 +28,15 @@ The configuration file is located at `lab5_nomad/nomad/hello.nomad`.
     nomad logs hello-devops
     ```
 
+
+---
+
+## 💻 Lab 6: Observability with Grafana/Loki
+
+This lab focuses on **Observability** by setting up a centralized logging stack using the LGTM components: **Loki**, **Promtail**, and **Grafana**.
+
+The configuration files are located in the `lab6_Grafana_Loki/` directory.
+
+**See the documentation for startup instructions and LogQL queries:**
+* [`lab6_Grafana_Loki/monitoring/loki_setup.txt`](monitoring/loki_setup.txt)
+
