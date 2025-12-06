@@ -1,1 +1,1 @@
-print("Hello, DevOps from lab3_docker!")
+print("Hello, DevOps!")

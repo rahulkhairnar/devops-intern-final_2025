@@ -1,25 +1,32 @@
-# 📦 Assignment 3: Docker Basics
-## Name: [Rahul K]
-## Date: [07-12-2025]
-## Project Directory: lab3_docker
+# DevOps Hello Project
 
-### 📝 Project Description
-This assignment demonstrates containerizing a simple Python script (`hello.py`) using a **Dockerfile**.
+This is a simple example project designed to demonstrate basic **DevOps principles**, specifically **containerization** using Docker.
 
-### 🛠️ Build and Run Instructions
-Follow these steps from the `lab3_docker` folder to build and run the container:
+The project contains a minimal Python script, `hello.py`, which prints a greeting. This script is then containerized using the provided `Dockerfile`.
 
-#### 1. Build the Docker Image
-The image is built using the local Dockerfile and tagged as `lab3_docker-image`.
-
-```bash
-docker build -t lab3_docker-image .
+## Project Structure
+```
+lab3_docker/
+├── Dockerfile
+├── hello.py
+└── README.md
 ```
 
-#### 2. Run the Container and Verify (Proof)
-Run the container to execute the `hello.py` script. The output below is the expected proof that the container works:
+
+## Containerization (Docker)
+
+This project has been containerized using the simple Dockerfile.
+
+### Build the Image
+The image is built using the local Dockerfile and tagged as `devops-hello`.
 
 ```bash
-docker run --rm lab3_docker-image
-# Expected Output: Hello, DevOps from lab3_docker!
+docker build -t devops-hello .
+```
+
+### Run the Container
+The container executes `python hello.py` on startup and terminates immediately after. The `--rm` flag automatically cleans up the container after it exits.
+
+```bash
+docker run --rm devops-hello
 ```
